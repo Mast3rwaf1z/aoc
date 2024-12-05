@@ -37,7 +37,7 @@ main = do
     print $ pairData testData
     print $ (getDistances . pairData) testData
     print $ (totalDistance . getDistances . pairData) testData
-    exerciseData <- parseData . lines <$> readFile "app/day1_input.txt"
+    exerciseData <- parseData . lines <$> readFile "inputs/day1_input.txt"
     print $ (totalDistance . getDistances . pairData) exerciseData
 
     putStrLn "==> Task 2"
