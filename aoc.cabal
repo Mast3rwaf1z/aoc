@@ -38,6 +38,10 @@ executable day3
     import: warnings
     main-is: Day3.hs
     build-depends:
-        base
+        base,
+        raw-strings-qq,
+        regex-compat
     hs-source-dirs: app
     default-language: Haskell2010
+    default-extensions:
+        QuasiQuotes
