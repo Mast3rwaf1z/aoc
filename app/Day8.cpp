@@ -111,8 +111,6 @@ public:
                     continue;
                 if(antenna1.frequency != antenna2.frequency)
                     continue;
-                const auto& [a1x, a1y] = antenna1.position;
-                const auto& [a2x, a2y] = antenna2.position;
                 const auto antiNodes1 = antenna1 - antenna2;
                 const auto antiNodes2 = antenna2 - antenna1;
                 
